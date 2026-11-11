@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSwap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body class="bg-[#f5f4ef]">
+
+    <!-- Navbar -->
+    <nav class="bg-[#08152f] border-b border-slate-700 ">
+        <div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center gap-6">
+            <div>
+
+                <p class="font-bold text-[30px] text-white">Book<span
+                class="text-[#E96F42] text-[30px] font-bold">Swap</span></p>
+
+            </div>
+
+            <div class="bg-white rounded-full flex items-center px-5 py-3 w-full max-w-md">
+            <span class="text-gray-400 mr-3">⌕</span>
+
+            <input
+                type="text"
+                placeholder="Rechercher un livre..."
+                class="w-full outline-none text-gray-700 text-sm"
+            >
+        </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-[#08152f] text-white">
+
+        <div class="max-w-7xl mx-auto px-8 py-16 grid md:grid-cols-2 gap-12 items-center">
+
+            <div>
+                <p class="text-orange-400 text-xs font-bold tracking-widest mb-10"> DEMANDES D'ÉCHANGE </p>
+                <h2 class="heading text-4xl md:text-5xl font-bold  mb-10">Échangez vos livres techniques</h2>
+                <p class=" text-sm mb-10">
+                    Découvrez les ouvrages proposés par les autres apprenants
+                    et trouvez celui qui <br> complète votre bibliothèque.
+                </p>
+                
+                <div class="flex gap-3 flex-wrap">
+
+                    <button class="bg-orange-400 text-[#08152f] px-5 py-2 rounded-full text-sm font-semibold">Tous </button>
+                    <button class="border border-slate-500 px-5 py-2 rounded-full text-sm hover:bg-slate-700">Définitif</button>
+                    <button class="border border-slate-500 px-5 py-2 rounded-full text-sm hover:bg-slate-700">Temporaire</button>
+
+                </div>
+
+            </div>
+
+            <div class="hidden md:flex justify-center items-center relative h-64">
+
+                <div
+                    class="bg-[#e87543] w-36 h-52 rounded-lg p-4 rotate-[-9deg] shadow-xl flex flex-col justify-between">
+                    <h3 class="heading text-white font-bold text-xl">
+                        LIVRE RECHERCHÉ
+                    </h3>
+                    <span class="text-white text-xs">________</span>
+                </div>
+
+                <div
+                    class="bg-[#26aaa0] w-36 h-52 rounded-lg p-4 rotate-[9deg] -ml-5 shadow-xl flex flex-col justify-between">
+                    <h3 class="heading text-white font-bold text-xl">
+                        LIVRE RECHERCHÉ
+                    </h3>
+                    <span class="text-white text-xs">________</span>
+                </div>
+
+                <div
+                    class="absolute bg-orange-400 text-[#08152f] w-12 h-12 rounded-full flex items-center justify-center border-4 border-[#08152f] text-xl">
+                    ⇄
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="max-w-7xl mx-auto px-8 py-10">
+
+    
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+
+                <span class="text-xs bg-teal-50 text-teal-700 px-3 py-1 rounded-full">Échange définitif</span>
+
+                <div class="flex justify-center items-center gap-4 my-6">
+
+                    <div class="bg-[#db5b25] w-24 h-36 rounded-md p-3 shadow-md text-white">
+                        <h3 class="heading font-bold text-sm">Clean Code</h3>
+                        <span class="text-xs block mt-20">_____</span>
+                    </div>
+
+                    <span class="bg-orange-400 rounded-full p-2 border-4 border-white">⇄</span>
+
+                    <div class="bg-[#119e91] w-24 h-36 rounded-md p-3 shadow-md text-white">
+                        <h3 class="heading font-bold text-sm">Clean Architecture</h3>
+                        <span class="text-xs block mt-14">_____</span>
+                    </div>
+
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 mb-5">
+
+                    <div>
+                        <p class="text-[10px] text-gray-400 font-bold mb-2">LIVRE RECHERCHÉ</p>
+                        <h3 class="heading font-bold text-sm">Clean Code</h3>
+                        <p class="text-xs text-gray-500 mt-2 leading-5">
+                            Écrire du code propre, simple et facile à maintenir.
+                        </p>
+                        <p class="text-xs font-semibold mt-3">JavaScript</p>
+                    </div>
+
+                    <div>
+                        <p class="text-[10px] text-gray-400 font-bold mb-2">LIVRE PROPOSÉ</p>
+                        <h3 class="heading font-bold text-sm">Clean Architecture</h3>
+                        <p class="text-xs text-gray-500 mt-2 leading-5">
+                            Structurer son application pour faciliter son évolution.
+                        </p>
+                        <p class="text-xs font-semibold mt-3">Architecture logicielle</p>
+                    </div>
+
+                </div>
+
+                <button class="bg-[#08152f] text-white w-full py-3 rounded-lg text-sm font-semibold hover:bg-blue-900">Voir les détails →</button>
+
+            </div>
+            <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+
+                <span class="text-xs bg-red-100  text-red-700 px-3 py-1 rounded-full">Échange temporaire</span>
+
+                <div class="flex justify-center items-center gap-4 my-6">
+
+                    <div class="bg-[#db5b25] w-24 h-36 rounded-md p-3 shadow-md text-white">
+                        <h3 class="heading font-bold text-sm">Clean Code</h3>
+                    </div>
+
+                    <span class="bg-orange-400 rounded-full p-2 border-4 border-white">⇄</span>
+
+                    <div class="bg-[#119e91] w-24 h-36 rounded-md p-3 shadow-md text-white">
+                        <h3 class="heading font-bold text-sm">Clean Architecture</h3>
+                    </div>
+
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 mb-5">
+
+                    <div>
+                        <p class="text-[10px] text-gray-400 font-bold mb-2">LIVRE RECHERCHÉ</p>
+                        <h3 class="heading font-bold text-sm">Clean Code</h3>
+                        <p class="text-xs text-gray-500 mt-2 leading-5">
+                            Écrire du code propre, simple et facile à maintenir.
+                        </p>
+                        <p class="text-xs font-semibold mt-3">JavaScript</p>
+                    </div>
+
+                    <div>
+                        <p class="text-[10px] text-gray-400 font-bold mb-2">LIVRE PROPOSÉ</p>
+                        <h3 class="heading font-bold text-sm">Clean Architecture</h3>
+                        <p class="text-xs text-gray-500 mt-2 leading-5">
+                            Structurer son application pour faciliter son évolution.
+                        </p>
+                        <p class="text-xs font-semibold mt-3">Architecture logicielle</p>
+                    </div>
+
+                </div>
+
+                <button class="bg-[#08152f] text-white w-full py-3 rounded-lg text-sm font-semibold hover:bg-blue-900">
+                    Voir les détails →
+                </button>
+
+            </div> 
+
+        </div>
+
+    </div>
+    <script src="data.js"></script>
+
+</body>
+
+</html>
